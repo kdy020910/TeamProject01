@@ -81,9 +81,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 017808b5a05937c4d87dfb2f5b02bc2b, type: 3}
-      insertIndex: 1
-      addedObject: {fileID: 6790100451152852234}
-    - targetCorrespondingSourceObject: {fileID: 100000, guid: 017808b5a05937c4d87dfb2f5b02bc2b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3710657650053441226}
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 017808b5a05937c4d87dfb2f5b02bc2b, type: 3}
@@ -95,19 +92,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 017808b5a05937c4d87dfb2f5b02bc2b, type: 3}
   m_PrefabInstance: {fileID: 6140726478023552800}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &6790100451152852234
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6140726478023453056}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 661bfdcd6b05a434d92388dd668d2048, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weapon: {fileID: 11400000, guid: 3d98dafd24bd98445811b7a59b2c49cf, type: 2}
 --- !u!136 &3710657650053441226
 CapsuleCollider:
   m_ObjectHideFlags: 0

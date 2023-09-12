@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using Unity.VisualScripting.Antlr3.Runtime.Misc;
 
 
-public class TSlot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IDragHandler, IEndDragHandler
+public class TSlot : SystemProPerty, IPointerClickHandler, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
     public Vector3 orgPos;
 
@@ -75,13 +76,13 @@ public class TSlot : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IDr
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        if(eventData.button == PointerEventData.InputButton.Right)
+        if (eventData.button == PointerEventData.InputButton.Right)
         {
-            if(item != null)
+            if (item != null)
             {
-                if(item.Type == Item.ItemType.Equip)
+                if (item.Type == Item.ItemType.Equip)
                 {
-                    // µµ±¸ ÀåÂø
+                    playerController.ShowAddSlotButton();
                 }
                 else
                 {

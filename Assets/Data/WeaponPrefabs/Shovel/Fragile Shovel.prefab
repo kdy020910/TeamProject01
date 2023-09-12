@@ -54,7 +54,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: dc45c81fce8916d4295a6ab931628e06, type: 3}
       propertyPath: m_Name
-      value: Sloppy Shovel
+      value: Fragile Shovel
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: dc45c81fce8916d4295a6ab931628e06, type: 3}
       propertyPath: m_TagString
@@ -67,9 +67,6 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: dc45c81fce8916d4295a6ab931628e06, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 8780382365864983157}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: dc45c81fce8916d4295a6ab931628e06, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 3741178992303777179}
   m_SourcePrefab: {fileID: 100100000, guid: dc45c81fce8916d4295a6ab931628e06, type: 3}
 --- !u!1 &8957691343386006537 stripped
@@ -77,19 +74,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: dc45c81fce8916d4295a6ab931628e06, type: 3}
   m_PrefabInstance: {fileID: 8111393050054388056}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &8780382365864983157
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8957691343386006537}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 661bfdcd6b05a434d92388dd668d2048, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weapon: {fileID: 11400000, guid: b8121837d873c654ab8d4f21f5e846a0, type: 2}
 --- !u!65 &3741178992303777179
 BoxCollider:
   m_ObjectHideFlags: 0

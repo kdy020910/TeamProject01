@@ -160,7 +160,7 @@ public class PlayerTrigger : SystemProPerty
         // 슬롯 안에 이미지도 사라져야함
         if (equippedWeapon.durability <= 0)
         {
-            playerController.UnequipWeapon();
+            //playerController.UnequipWeapon();
         }
         // 내구도를 PlayerPrefs에 저장
         PlayerPrefs.SetInt("EquippedWeaponDurability", equippedWeapon.durability);
@@ -218,7 +218,7 @@ public class PlayerTrigger : SystemProPerty
         // 슬롯 안에 이미지도 사라져야함
         if (equippedWeapon.durability <= 0)
         {
-            playerController.UnequipWeapon();
+            //playerController.UnequipWeapon();
         }
 
         if (IsNearObject(hitRockObject) && playerController.currentEquippedWeapon != null)
@@ -306,7 +306,7 @@ public class PlayerTrigger : SystemProPerty
         // 내구도가 0이면 무기 제거
         if (equippedWeapon.durability <= 0)
         {
-            playerController.UnequipWeapon();
+            //playerController.UnequipWeapon();
             ShowToastMessage("낚시대가 부러졌다!");
             return;
         }
@@ -324,25 +324,25 @@ public class PlayerTrigger : SystemProPerty
             {
                 // 오징어를 낚았을 때
                 ShowToastMessage("오징어를 낚았다!");
-                AddToInventory("오징어"); // 인벤토리에 추가 (인벤토리 코드에 따라 다름)
+                AddToInventory("오징어"); // 인벤토리에 추가 
             }
             else if (randomValue <= troutProbability)
             {
                 // 잉어를 낚았을 때
                 ShowToastMessage("잉어를 낚았다!");
-                AddToInventory("잉어"); // 인벤토리에 추가 (인벤토리 코드에 따라 다름)
+                AddToInventory("잉어"); // 인벤토리에 추가 
             }
             else if (randomValue <= pufferfishProbability)
             {
                 // 복어를 낚았을 때
                 ShowToastMessage("복어를 낚았다!");
-                AddToInventory("복어"); // 인벤토리에 추가 (인벤토리 코드에 따라 다름)
+                AddToInventory("복어"); // 인벤토리에 추가 
             }
             else if (randomValue <= clamProbability)
             {
                 // 조개를 낚았을 때
                 ShowToastMessage("조개를 낚았다!");
-                AddToInventory("조개"); // 인벤토리에 추가 (인벤토리 코드에 따라 다름)
+                AddToInventory("조개"); // 인벤토리에 추가 
             }
             else
             {
@@ -374,7 +374,6 @@ public class PlayerTrigger : SystemProPerty
             Debug.Log(itemName + "를 인벤토리에 추가했습니다.");
         }*/
     }
-
 
     // 오브젝트 거리 체크
     private bool IsNearObject(GameObject targetObject)

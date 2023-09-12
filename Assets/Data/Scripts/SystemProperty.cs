@@ -125,5 +125,17 @@ public class SystemProPerty : MonoBehaviour
             return _diyField;
         }
     }
-    
+    Item _item = null;
+    protected Item item
+    {
+        get
+        {
+            _item = FindObjectOfType<Item>();
+            if( _item == null)
+            {
+                _item = GetComponent<Item>();
+            }
+            return _item;
+        }
+    }
 }

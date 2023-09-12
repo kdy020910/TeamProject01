@@ -19,9 +19,9 @@ public class DIYUIController : SystemProPerty
     public TextMeshProUGUI recipeNameText; // 레시피 이름을 표시할 Text
     public TextMeshProUGUI recipeDescriptionText; // 레시피 설명을 표시할 Text
 
-    public Image[] ingredientImages;
-    public TextMeshProUGUI[] ingredientNameTexts;
-    public TextMeshProUGUI[] ingredientAmountTexts;
+    public Image[] ingredientImages; // 재료 이미지 ui
+    public TextMeshProUGUI[] ingredientNameTexts; // 재료 이름 ui
+    public TextMeshProUGUI[] ingredientAmountTexts; // 재료 갯수 ui 
 
     public void OnRecipeSlotClicked(GameObject clickedSlot)
     {

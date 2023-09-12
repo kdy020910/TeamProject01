@@ -22,3 +22,7 @@ MonoBehaviour:
   Price_Sell: 0
   Prefab: {fileID: 6140726478023453056, guid: 54f067055f7027b43a894762f72438e3, type: 3}
   Icon: {fileID: -1388049662, guid: 5c5d2f1e434dc7147b7baa88a2a74104, type: 3}
+  weapondata:
+  - weaponPrefab: {fileID: 6140726478023453056, guid: 54f067055f7027b43a894762f72438e3, type: 3}
+    weaponType: 8
+    durability: 30

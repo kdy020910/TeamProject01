@@ -32,4 +32,16 @@ public class Item : ScriptableObject
     [Header("바인딩")]
     public GameObject Prefab;
     public Sprite Icon;
+
+    public Weapon[] weapondata; //무기 데이터 추가
 }
+
+    [System.Serializable]
+    public class Weapon
+    {
+        public Sprite Icon;
+        public GameObject weaponPrefab;
+        public WeaponType weaponType; // 무기 유형
+        public int durability; // 현재 무기 내구도
+        protected Transform transform;
+    }
